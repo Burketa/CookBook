@@ -2,6 +2,8 @@ package net.luanwilliam.cookbook;
 
 import static org.junit.Assert.assertEquals;
 
+import net.luanwilliam.cookbook.model.Receita;
+
 import org.junit.Test;
 
 /**
@@ -11,7 +13,16 @@ import org.junit.Test;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void receitaIsCorrect() {
+        Receita receita = new Receita(
+                "Minha receita",
+                "Minha descricao",
+                "Meus ingredientes",
+                "Meu modo de preparo",
+                false,
+                "Minha avaliacao", 1
+        );
+
+        assertEquals(receita.getNome(), "Minha receita");
     }
 }
