@@ -23,6 +23,6 @@ public class ExampleUnitTest {
                 "Minha avaliacao", 1
         );
 
-        assertEquals(receita.getNome(), "Minha recasdeita");
+        assertEquals(receita.getNome(), "Minha receita");
     }
 }
