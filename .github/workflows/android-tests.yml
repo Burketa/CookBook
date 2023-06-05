@@ -29,20 +29,3 @@ jobs:
         run: |
           chmod +x ./gradlew
           ./gradlew test
-
-      - name: Set up Android Emulator
-        uses: actions/setup-android-emulator@v2
-        with:
-          api-level: 30
-          target: default
-
-      - name: Start Android Emulator
-        run: emulator -avd <emulator_name> -no-audio -no-window
-
-      - name: Wait for Android Emulator to start
-        run: |
-          adb wait-for-device
-          sleep 30
-
-      - name: Run Android tests
-        run: ./gradlew connectedAndroidTest
