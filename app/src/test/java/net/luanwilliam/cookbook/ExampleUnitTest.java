@@ -15,7 +15,7 @@ public class ExampleUnitTest {
     @Test
     public void receitaIsCorrect() {
         Receita receita = new Receita(
-                "Minha receita",
+                "Minha receita legal",
                 "Minha descricao",
                 "Meus ingredientes",
                 "Meu modo de preparo",
@@ -23,6 +23,6 @@ public class ExampleUnitTest {
                 "Minha avaliacao", 1
         );
 
-        assertEquals(receita.getNome(), "Minha receita");
+        assertEquals(receita.getNome(), "Minha receita legal");
     }
 }
